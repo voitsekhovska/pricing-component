@@ -23,13 +23,13 @@ body {
   font-size: 15px;
   color: var(--gray-650);
   width: 100%;
-  height: 100dvh;
+  height: 100vh;
   background-color: var(--blue-50);
   background-image: url(./images/bg-bottom.svg), url(./images/bg-top.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: bottom left, top right;
   background-attachment: fixed, fixed;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,6 +40,7 @@ main {
   flex-direction: column;
   flex: 1;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 header {
@@ -109,7 +110,7 @@ h2 {
 .toggle:checked + label::after {
   transform: translateX(-28px);
 }
-.toggle + label:hover {
+.checkbox:hover label {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -129,7 +130,8 @@ h2 {
   padding: 35px;
   border-radius: 15px;
   text-align: center;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -222,4 +224,33 @@ button:hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* QUERIES */
+
+@media (max-width: 800px) {
+  body {
+    background-image: url(./images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  main {
+    margin: 70px 30px;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 30px;
+    margin: 60px 10px;
+  }
+
+  .card:hover,
+  .card:hover + .card,
+  .card:has(+ .card:hover) {
+    transform: none;
+  }
 }
