@@ -48,6 +48,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  margin-top: 70px;
 }
 
 .options {
@@ -239,7 +240,7 @@ button:hover {
   }
 
   main {
-    margin: 70px 30px;
+    margin: 0 30px;
   }
 
   .options {
