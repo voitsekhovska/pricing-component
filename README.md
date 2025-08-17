@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/pricing-component-with-toggle-challenge](https://www.frontendmentor.io/solutions/pricing-component-with-toggle-challenge-GAtYOvzuel)
 - Live Site URL: [https://voitsekhovska.github.io/pricing-component](https://voitsekhovska.github.io/pricing-component/)
 
 ## My process
